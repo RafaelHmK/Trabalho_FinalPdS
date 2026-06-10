@@ -113,37 +113,29 @@ Responsável pelo armazenamento de clientes, veículos, ordens de serviço e ser
 
 Localização:
 
-```text
-/docs/diagramas/casos-de-uso.puml
-```
+
+![Casos de Uso](Diagramas/Casos-Uso.jpeg)
+
 
 ## Diagrama de Classes
 
 Localização:
 
-```text
-/docs/diagramas/classes.puml
-```
+![Classes](Diagramas/Classes.jpeg)
 
 ## Diagramas de Sequência
 
 ### Abrir Ordem de Serviço
 
-```text
-/docs/diagramas/seq-abrir-os.puml
-```
+![Sequência Abrir OS](Diagramas/Sequencia-Abrir-OS.jpeg)
 
 ### Aprovar Orçamento
 
-```text
-/docs/diagramas/seq-aprovar-orcamento.puml
-```
+![Sequência Aprovar Orçamento](Diagramas/Sequencia-Aprovar-Orcamento.jpeg)
 
 ### Finalizar Ordem de Serviço
 
-```text
-/docs/diagramas/seq-finalizar-os.puml
-```
+![Sequência Finalizar OS](Diagramas/Sequencia-Finalizar-Ordem-de-Servico.jpeg)
 
 ## Diagramas de Comunicação
 
@@ -153,27 +145,23 @@ Localização:
 
 ## Diagrama de Estados
 
-```text
-/docs/diagramas/estados.puml
-```
+![Comunicação Abrir OS](Diagramas/Comunicacao-Abrir-OS.jpeg)
+
+![Comunicação Aprovar Orçamento](Diagramas/Comunicacao-Aprovar-Orcamento.jpeg)
+
+![Comunicação Finalizar Serviço](Diagramas/Comunicacao-Finalizar-Servico.jpeg)
 
 ## Diagrama de Componentes
 
-```text
-/docs/diagramas/componentes.puml
-```
+![Componentes](Diagramas/Componentes.jpeg)
 
 ## Diagrama de Implantação
 
-```text
-/docs/diagramas/implantacao.puml
-```
+![Implantação](Diagramas/Implantacao.jpeg)
 
-## Modelo de Dados (DER)
+## Modelo de Dados
 
-```text
-/docs/diagramas/modelo-dados.puml
-```
+![Modelo de Dados](Diagramas/modelo-dados.jpeg)
 
 ---
 
