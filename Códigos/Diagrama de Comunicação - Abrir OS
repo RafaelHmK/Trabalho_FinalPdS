@@ -1,0 +1,12 @@
+@startuml
+
+object Atendente
+object Sistema
+object Banco
+
+Atendente -> Sistema : 1:cadastrarOS()
+Sistema -> Banco : 2:salvar()
+Banco -> Sistema : 3:confirmacao()
+Sistema -> Atendente : 4:sucesso()
+
+@enduml
