@@ -1,0 +1,12 @@
+@startuml
+
+object Mecanico
+object Sistema
+object Banco
+
+Mecanico -> Sistema : 1:finalizarOS()
+Sistema -> Banco : 2:atualizarStatus()
+Banco -> Sistema : 3:ok()
+Sistema -> Mecanico : 4:finalizada()
+
+@enduml
