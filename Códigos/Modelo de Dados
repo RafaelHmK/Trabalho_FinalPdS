@@ -1,0 +1,50 @@
+@startuml
+
+entity CLIENTE {
+* id : bigint
+--
+nome : varchar
+cpf : varchar
+telefone : varchar
+}
+
+entity VEICULO {
+* id : bigint
+--
+placa : varchar
+modelo : varchar
+ano : integer
+cliente_id : bigint
+}
+
+entity ORDEM_SERVICO {
+* id : bigint
+--
+status : varchar
+data_abertura : date
+veiculo_id : bigint
+mecanico_id : bigint
+}
+
+entity ORCAMENTO {
+* id : bigint
+--
+valor : decimal
+status : varchar
+ordem_id : bigint
+}
+
+entity SERVICO {
+* id : bigint
+--
+descricao : varchar
+valor : decimal
+ordem_id : bigint
+}
+
+CLIENTE ||--o{ VEICULO
+VEICULO ||--o{ ORDEM_SERVICO
+ORDEM_SERVICO ||--|| ORCAMENTO
+ORDEM_SERVICO ||--o{ SERVICO
+
+@enduml
