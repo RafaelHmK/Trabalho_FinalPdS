@@ -1,0 +1,16 @@
+@startuml
+
+node Cliente {
+artifact Navegador
+}
+
+node Servidor {
+artifact "Aplicação Spring Boot"
+}
+
+database PostgreSQL
+
+Navegador --> "Aplicação Spring Boot"
+"Aplicação Spring Boot" --> PostgreSQL
+
+@enduml
