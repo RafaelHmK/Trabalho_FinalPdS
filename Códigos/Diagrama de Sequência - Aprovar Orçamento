@@ -1,0 +1,13 @@
+@startuml
+
+actor Cliente
+
+participant Sistema
+database Banco
+
+Cliente -> Sistema : aprovar orçamento
+Sistema -> Banco : atualizar status
+Banco --> Sistema : sucesso
+Sistema --> Cliente : orçamento aprovado
+
+@enduml
