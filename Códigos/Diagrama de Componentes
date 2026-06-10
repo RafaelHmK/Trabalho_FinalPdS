@@ -1,0 +1,34 @@
+@startuml
+
+package "Frontend" {
+[Portal Web]
+}
+
+package "Backend" {
+
+[API REST]
+
+[Serviço Clientes]
+
+[Serviço Veículos]
+
+[Serviço Ordens]
+
+[Serviço Relatórios]
+}
+
+database "PostgreSQL"
+
+[Portal Web] --> [API REST]
+
+[API REST] --> [Serviço Clientes]
+[API REST] --> [Serviço Veículos]
+[API REST] --> [Serviço Ordens]
+[API REST] --> [Serviço Relatórios]
+
+[Serviço Clientes] --> PostgreSQL
+[Serviço Veículos] --> PostgreSQL
+[Serviço Ordens] --> PostgreSQL
+[Serviço Relatórios] --> PostgreSQL
+
+@enduml
