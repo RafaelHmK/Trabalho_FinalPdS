@@ -1,0 +1,13 @@
+@startuml
+
+actor Atendente
+
+participant Sistema
+database Banco
+
+Atendente -> Sistema : cadastrar OS
+Sistema -> Banco : salvar OS
+Banco --> Sistema : confirmação
+Sistema --> Atendente : OS criada
+
+@enduml
