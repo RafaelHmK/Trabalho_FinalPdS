@@ -1,0 +1,37 @@
+@startuml
+
+left to right direction
+
+actor Cliente
+actor Atendente
+actor Mecanico
+actor Administrador
+
+rectangle AutoManager {
+
+usecase "UC01 - Cadastrar Cliente" as UC01
+usecase "UC02 - Cadastrar Veículo" as UC02
+usecase "UC03 - Abrir Ordem de Serviço" as UC03
+usecase "UC04 - Registrar Diagnóstico" as UC04
+usecase "UC05 - Emitir Orçamento" as UC05
+usecase "UC06 - Aprovar Orçamento" as UC06
+usecase "UC07 - Executar Serviço" as UC07
+usecase "UC08 - Finalizar Ordem de Serviço" as UC08
+usecase "UC09 - Consultar Relatórios" as UC09
+
+}
+
+Atendente --> UC01
+Atendente --> UC02
+Atendente --> UC03
+
+Mecanico --> UC04
+Mecanico --> UC05
+Mecanico --> UC07
+Mecanico --> UC08
+
+Cliente --> UC06
+
+Administrador --> UC09
+
+@enduml
