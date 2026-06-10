@@ -1,0 +1,12 @@
+@startuml
+
+object Cliente
+object Sistema
+object Banco
+
+Cliente -> Sistema : 1:aprovar()
+Sistema -> Banco : 2:atualizar()
+Banco -> Sistema : 3:ok()
+Sistema -> Cliente : 4:confirmacao()
+
+@enduml
