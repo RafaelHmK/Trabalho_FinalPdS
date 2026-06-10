@@ -1,0 +1,14 @@
+@startuml
+
+[*] --> Aberta
+
+Aberta --> EmDiagnostico
+EmDiagnostico --> OrcamentoEmitido
+OrcamentoEmitido --> AguardandoAprovacao
+AguardandoAprovacao --> EmExecucao
+EmExecucao --> Finalizada
+Finalizada --> Entregue
+
+Entregue --> [*]
+
+@enduml
