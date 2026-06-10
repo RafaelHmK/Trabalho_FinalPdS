@@ -1,0 +1,13 @@
+@startuml
+
+actor Mecanico
+
+participant Sistema
+database Banco
+
+Mecanico -> Sistema : finalizar serviço
+Sistema -> Banco : atualizar status
+Banco --> Sistema : sucesso
+Sistema --> Mecanico : OS finalizada
+
+@enduml
