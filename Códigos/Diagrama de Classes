@@ -1,0 +1,51 @@
+@startuml
+
+class Usuario {
++id
++nome
++email
++senha
+}
+
+class Cliente {
++telefone
++cpf
+}
+
+class Mecanico {
++especialidade
+}
+
+class Veiculo {
++placa
++modelo
++ano
+}
+
+class OrdemServico {
++numero
++dataAbertura
++status
+}
+
+class Orcamento {
++valor
++dataEmissao
++status
+}
+
+class Servico {
++descricao
++valor
+}
+
+Usuario <|-- Cliente
+Usuario <|-- Mecanico
+
+Cliente "1" -- "0..*" Veiculo
+Veiculo "1" -- "0..*" OrdemServico
+OrdemServico "1" -- "1" Orcamento
+OrdemServico "1" -- "0..*" Servico
+Mecanico "1" -- "0..*" OrdemServico
+
+@enduml
